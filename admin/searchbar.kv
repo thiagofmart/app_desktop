@@ -1,0 +1,49 @@
+<SearchField>:
+    orientation: 'horizontal'
+    size_hint: 1, None
+    height:'30dp'
+
+<SearchBar>:
+    orientation: 'lr-tb'
+    cols: 3
+    padding: '20dp', '10dp'
+    spacing: '30dp', '5dp'
+    size_hint: 1, None
+    md_bg_color: 1,1,1,0.75
+
+<MiddleBar>:
+    orientation:'horizontal'
+    md_bg_color: 0, 0, 0, 0.8
+    padding: '1px'
+    size_hint: 1, None
+    height: '30dp'
+    Middle1:
+    Middle2:
+
+<Middle1>:
+    orientation: 'lr-tb'
+    padding: 15, 5
+    spacing: 10
+    size_hint: 0.45, 1
+    md_bg_color: 1, 0.60, 0, 1
+<Middle2>:
+    orientation: 'rl-tb'
+    padding: 15, 5
+    spacing: 10
+    size_hint: 0.55, 1
+    md_bg_color: 1, 0.60, 0, 1
+
+<BTN>:
+    adaptive_width: True
+    md_bg_color: 0.9,0.9,0.9,1
+<MyButton>:
+    size_hint: 1, 1
+    line_color: 0,0,0,1
+    text_color: 0,0,0,1
+    on_release: self.action()
+
+<TgBtn>:
+    line_color: 0,0,0,1
+    text_color: 0,0,0,1
+    size_hint: None, 1
+    on_state: self.action()

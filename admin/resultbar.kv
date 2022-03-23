@@ -1,0 +1,61 @@
+#:set BG 0, 0, 0, 1
+<ColumnLabel>:
+    size_hint: 1, 1
+    md_bg_color: 1, 0.60, 0, 1
+    valign: 'center'
+    halign: 'center'
+    bold: True
+    theme_text_color: "Custom"
+    text_color: 1, 1, 1, 1
+<ColumnCell>:
+    padding: '1px'
+    md_bg_color: BG
+<Columns>:
+    orientation: 'horizontal'
+    size_hint: 1, None
+    spacing: '1dp'
+    height: '30dp'
+
+<RowLabel>:
+    md_bg_color: 0.975, 0.975, 0.975, 1
+    valign: 'center'
+    halign: 'center'
+<RowCell>:
+    md_bg_color: BG
+    padding: '1px'
+
+<DeleteBtn>:
+    font_size: 18
+    text: '  X  .'
+    bold: True
+    pos_hint:{'center_x': 0.55,'center_y': 0.5}
+    on_release: self.delet()
+<DeleteCell>:
+    md_bg_color: 0, 0, 0, 1
+    padding: '2px'
+    size_hint: None, None
+    height: '30dp'
+    width: '30dp'
+
+<Row>:
+    orientation: 'horizontal'
+    size_hint: 1, None
+    spacing: '2px'
+    height: '30dp'
+<Rows>:
+    orientation: 'vertical'
+    adaptive_height: True
+
+<ResultBar>:
+    orientation: 'vertical'
+    padding: '20px', '10px'
+    adaptive_height:True
+
+<PaginationCell>:
+    md_bg_color: 1, 0.60, 0, 1
+<Pagination>:
+    md_bg_color: BG
+    orientation: 'horizontal'
+    size_hint: 1, None
+    padding: '1px'
+    height: '30dp'
